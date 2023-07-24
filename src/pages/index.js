@@ -1,5 +1,4 @@
 import Head from "next/head";
-import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import { motion } from "framer-motion";
 import Card from "./card.js";
@@ -11,7 +10,6 @@ import Portofolio from "./Portofolio.js";
 import LastContent from "./LastContent.js";
 import Footer from "./Footer.js";
 
-const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
