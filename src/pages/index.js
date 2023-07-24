@@ -81,14 +81,37 @@ export default function Home() {
         </motion.div>
       </motion.div>
       <motion.div
-      className="h-screen flex justify-center items-center flex-row flex-wrap"
+        
         initial={{ opacity: 0, y: 100 }}
         transition={{ type: "spring", bounce: 0.2, duration: 1.5 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
+        className="h-screen flex  flex-row flex-wrap"
+      >
+        <h1
+          className="flex justify-start max-sm:px-8 p-6 px-32 text-4xl  items-center
+            font-bold"
+        >
+          Portofolio
+        </h1>
+        <motion.div
+          initial={{ opacity: 0, y: 100 }}
+          transition={{ type: "spring", bounce: 0.2, duration: 1.5 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+        >
+        </motion.div>
+      </motion.div>
+      <Portofolio />
+
+      <motion.div
+      className="h-screen flex justify-center items-center flex-row flex-wrap"
+        initial={{ opacity: 0, y: 100 }}
+        transition={{ type: "spring", bounce: 0.2, duration: 1.5, delay: 0.5 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
       >
         <LastContent />
-        {/* <Portofolio /> */}
       </motion.div>
       <motion.div
         initial={{ opacity: 0, y: 100 }}
@@ -99,7 +122,6 @@ export default function Home() {
         <Footer />
       </motion.div>
 
-      {/* <div className="mb-[500px]"></div> */}
     </>
   );
 }

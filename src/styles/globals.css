@@ -225,8 +225,6 @@ input {
   12.5px 12.5px 12.1px rgba(0, 0, 0, 0.035),
   17.7px 17.7px 17.2px rgba(0, 0, 0, 0.039),
   25.1px 25.1px 24.4px rgba(0, 0, 0, 0.043),
-  36.5px 36.5px 35.4px rgba(0, 0, 0, 0.048),
-  56.3px 56.3px 54.6px rgba(0, 0, 0, 0.055),
   100px 100px 97px rgba(0, 0, 0, 0.07)
 ;
 }
@@ -246,4 +244,7 @@ input {
     transform: rotate(-30deg);
 
   }
+}
+.line-clamp{
+  line-clamp: 5;
 }

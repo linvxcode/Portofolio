@@ -47,8 +47,23 @@ const hoverVariant = {
         },
         {
           id: 6,
-          src: '/php.png',
-          text: 'PHP'
+          src: '/tailwind.png',
+          text: 'Tailwind'
+        },
+        {
+          id: 7,
+          src: '/git.jpg',
+          text: 'Git'
+        },
+        {
+          id: 8,
+          src: '/framer.png',
+          text: 'Framer Motion'
+        },
+        {
+          id: 9,
+          src: '/github.png',
+          text: 'Github'
         },
       ];
     

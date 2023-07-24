@@ -9,9 +9,9 @@ function About() {
         <div className="">
         <motion.h1 
         // initial={{opacity:0}}  transition={{type:"spring",bounce:0.5,duration:0.9,delay:0.2}} whileInView={{opacity:1}} viewport={true}
-         className=' block font-light leading-relaxed  font-mon text-lg flex-wrap justify-center p-5 flex-col'
+         className=' block max-[422px]:text-sm font-light leading-relaxed  font-mon text-lg flex-wrap justify-center p-5 flex-col'
                                           initial={{opacity: 0, y: 100}}
-                                          transition={{type: "spring",bounce: 0.2,duration: 1.5}}
+                                          transition={{type: "spring",bounce: 0.2,duration: 1.5, delay: 0.3}}
                                           whileInView={{ opacity: 1, y: 0}}
                                           viewport={{ once: true }}
         >

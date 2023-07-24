@@ -48,7 +48,7 @@ function Nav() {
   }, []);
 
   return (
-    <motion.div className="flex  justify-end"
+    <motion.div className="flex"
     initial={{ opacity: 0 }}
     transition={{ type: "spring", bounce: 0.2, duration: 1}}
     animate={{ opacity: 1 }}
@@ -56,7 +56,8 @@ function Nav() {
       <motion.nav
         initial={false}
         animate={isOpen ? "open" : "closed"}
-        className="p-[10px] px-10  fixed top-0 z-10 w-[100%] md:ml-auto  sm:ml-auto transition-all"
+        className="p-[10px] px-10 max-sm:px-5  fixed top-0 z-10 w-[100%]  transition-all"
+        
       >
         <motion.button
         id="give"
@@ -104,28 +105,30 @@ function Nav() {
               transition: {
                 type: "spring",
                 bounce: 0,
-                duration: 0.3,
+                duration: 0.7,
               },
             },
           }}
           style={{ pointerEvents: isOpen ? "auto" : "none" }}
+          className={isOpen ? '' : 'h-20'}
         >
-          <motion.li variants={itemVariants}>
+          <motion.li variants={itemVariants} >
             <Link to="home" smooth={true} duration={500} onClick={closeMenu}
             className="flex justify-center"
             >
-              <button className="w-auto btn btn-outline">Home</button>
+            <h1 className="w-auto  uppercase font-semibold hover:underline font">Home</h1>
               
             </Link>
           </motion.li>
           <motion.li variants={itemVariants}>
             <Link  className="flex justify-center" to="about" smooth={true} duration={500} onClick={closeMenu}>
-            <button className="w-auto btn btn-outline">About</button>
+            <h1 className="w-auto  uppercase font-semibold hover:underline font">About</h1>
             </Link>
           </motion.li>
           <motion.li variants={itemVariants}>
             <Link className="flex justify-center" to="tech" smooth={true} duration={500} onClick={closeMenu}>
-            <button className="w-auto btn btn-outline">Technology</button>
+            <h1 
+            className="w-auto  uppercase font-semibold hover:underline font transition-all">Technology</h1>
             </Link>
           </motion.li>
           {/* <motion.li variants={itemVariants}>Item 2 </motion.li> */}

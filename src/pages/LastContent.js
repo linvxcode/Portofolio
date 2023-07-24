@@ -48,9 +48,10 @@ function LastContent() {
           Join the creative Portofolio by subscribing to my newsletter. Let the
           inspiration rain on you.
         </h1>
-        <div className="flex w-[100%] justify-center gap-3">
+        <div className="flex w-[100%] flex-row flex-wrap justify-center gap-3">
           <input
-            type="text"
+            required
+            type="email"
             placeholder="Name@gmail.com"
             value={name}
             onChange={(e) => setName(e.target.value)}
