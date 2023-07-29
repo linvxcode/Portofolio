@@ -69,7 +69,7 @@ const hoverVariant = {
     
   return (
     <>
-      <motion.div className=" px-28 max-sm:px-12"
+      <motion.div className="max-[450px]:px-0 px-28 max-sm:px-12"
               viewport={{ once: true}}
       >
         <div className="grid grid-cols-3 w-[100%] gap-5 justify-items-center max-md:grid-cols-1">

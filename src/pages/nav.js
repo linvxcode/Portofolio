@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { Link } from "react-scroll";
+import { Button } from "@nextui-org/react";
 
 const itemVariants = {
   open: {
@@ -113,24 +114,71 @@ function Nav() {
           className={isOpen ? '' : 'h-20'}
         >
           <motion.li variants={itemVariants} >
+            <div className="flex justify-center">
+            <Button auto color="secondary" bordered rounded flat
+            className="border-black flex justify-center"
+            >
             <Link to="home" smooth={true} duration={500} onClick={closeMenu}
-            className="flex justify-center"
+            className="flex justify-center text-black"
             >
             <h1 className="w-auto  uppercase font-semibold hover:underline font">Home</h1>
-              
             </Link>
+              </Button>
+              </div>
           </motion.li>
-          <motion.li variants={itemVariants}>
-            <Link  className="flex justify-center" to="about" smooth={true} duration={500} onClick={closeMenu}>
+          <motion.li variants={itemVariants} >
+            <div className="flex justify-center">
+            <Button auto color="secondary" bordered rounded flat
+            className="border-black flex justify-center"
+            >
+            <Link to="about" smooth={true} duration={500} onClick={closeMenu}
+            className="flex justify-center text-black"
+            >
             <h1 className="w-auto  uppercase font-semibold hover:underline font">About</h1>
             </Link>
+              </Button>
+              </div>
           </motion.li>
-          <motion.li variants={itemVariants}>
-            <Link className="flex justify-center" to="tech" smooth={true} duration={500} onClick={closeMenu}>
-            <h1 
-            className="w-auto  uppercase font-semibold hover:underline font transition-all">Technology</h1>
+          <motion.li variants={itemVariants} >
+            <div className="flex justify-center">
+            <Button auto color="secondary" bordered rounded flat
+            className="border-black flex justify-center"
+            >
+            <Link to="tech" smooth={true} duration={500} onClick={closeMenu}
+            className="flex justify-center text-black"
+            >
+            <h1 className="w-auto  uppercase font-semibold hover:underline font">Technology</h1>
             </Link>
+              </Button>
+              </div>
           </motion.li>
+          <motion.li variants={itemVariants} >
+            <div className="flex justify-center">
+            <Button auto color="secondary" bordered rounded flat
+            className="border-black flex justify-center"
+            >
+            <Link to="porto" smooth={true} duration={500} onClick={closeMenu}
+            className="flex justify-center text-black"
+            >
+            <h1 className="w-auto  uppercase font-semibold hover:underline font">Portofolio</h1>
+            </Link>
+              </Button>
+              </div>
+          </motion.li>
+          <motion.li variants={itemVariants} >
+            <div className="flex justify-center">
+            <Button auto color="secondary" bordered rounded flat
+            className="border-black flex justify-center"
+            >
+            <Link to="contact" smooth={true} duration={500} onClick={closeMenu}
+            className="flex justify-center text-black"
+            >
+            <h1 className="w-auto  uppercase font-semibold hover:underline font">Contact</h1>
+            </Link>
+              </Button>
+              </div>
+          </motion.li>
+          
           {/* <motion.li variants={itemVariants}>Item 2 </motion.li> */}
           {/* <motion.li variants={itemVariants}>Item 3 </motion.li>
         <motion.li variants={itemVariants}>Item 4 </motion.li>

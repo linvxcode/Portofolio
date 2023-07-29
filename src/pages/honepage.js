@@ -4,6 +4,7 @@ import styles from "@/styles/Home.module.css";
 import { motion } from "framer-motion";
 import IntroText from "./IntroText.js";
 import { Link } from "react-scroll";
+import { Button } from "@nextui-org/react";
 
 
 
@@ -72,12 +73,17 @@ function Homepage() {
               <motion.div
                 className="px-3 mt-5"
               >
-
+                {/* <Button auto color="secondary" rounded flat>
+          Secondary
+        </Button> */}
+                <Button auto color="secondary" bordered rounded flat
+                className="border-black"
+                >
               <Link
                 to="about"
                 smooth={true}
                 duration={500}
-                className="btn btn-outline"
+                className=""
                 >
                 {/* Explore */}
                 <motion.svg
@@ -86,7 +92,7 @@ function Homepage() {
                   viewBox="0 0 24 24"
                   strokeWidth={1.5}
                   stroke="currentColor"
-                  className="w-20 h-8"
+                  className="w-20 h-8 text-black"
                   whileHover="offscreen"
                   initial="onscreen"
                   variants={hoverVariant}
@@ -98,6 +104,7 @@ function Homepage() {
                     />
                 </motion.svg>
               </Link>
+              </Button>
                     </motion.div>
             </motion.div>
           </motion.div>

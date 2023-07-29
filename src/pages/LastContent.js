@@ -28,14 +28,14 @@ function LastContent() {
         setTimeout(() => {
           setNotif(false);
         }, 2000);
+        setName("");
       }, 1000);
     }
-    setName("");
   };
   return (
     <>
       <motion.div
-        className="gap-9 flex justify-center items-center flex-row flex-wrap p-28"
+        className="gap-9 flex justify-center items-center flex-row flex-wrap p-28 max-sm:p-6 max-md:px-20"
         initial={{ opacity: 0, y: 100 }}
         transition={{ type: "spring", bounce: 0.2, duration: 1.5 }}
         whileInView={{ opacity: 1, y: 0 }}
