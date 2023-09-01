@@ -73,6 +73,7 @@ function Nav() {
             alt="port Logo"
             width={80}
             height={60}
+            className="w-auto h-auto"
             priority
           />
           {/* <img /> */}

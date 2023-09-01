@@ -22,7 +22,7 @@ const hoverVariant = {
     const images = [
         {
           id: 1,
-          src: '/Nextjs.png',
+          src: '/next.png',
           text: 'Next Js',
         },
         {
@@ -83,7 +83,7 @@ const hoverVariant = {
           className=""
           whileHover={{scale: 0.9}}
           >
-            <Image src={item.src} alt="Next" width={120} height={80} />
+            <Image src={item.src} alt={item.text} width={120} height={80} className="w-auto h-auto" style={{width: 'auto', height: 'auto'}} />
           </motion.figure>
           
         </motion.div>

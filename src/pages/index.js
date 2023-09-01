@@ -86,7 +86,7 @@ export default function Home() {
         transition={{ type: "spring", bounce: 0.2, duration: 1.5 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        className="h-screen flex  flex-row flex-wrap"
+        className="h- mt-28 mb-10 flex  flex-row flex-wrap"
       >
         <h1
           className="flex justify-start max-sm:px-8 p-6 px-32 text-4xl  items-center
