@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import nextj from "../../public/nextj.svg"
 
 function AboutCard() {
 
@@ -20,51 +21,50 @@ const hoverVariant = {
   };
 
     const images = [
+      {
+        src: '/logo/framer-min.png',
+        text: 'assad'
+      },
         {
-          id: 1,
-          src: '/next.png',
+          // id: 1,
+          src: '/logo/next-min.png',
           text: 'Next Js',
         },
         {
-          id: 2,
-          src: '/React.png',
+          src: '/logo/React-min.png',
           text: 'React Js'
         },
         {
-          id: 3,
-          src: '/js.png',
+          src: '/logo/tailwind-min.png',
           text: 'Javascript'
         },
         {
-          id: 4,
-          src: '/laravel.png',
+          src: '/logo/laravel-min.png',
           text: 'Laravel'
         },
         {
-          id: 5,
-          src: '/mysql.png',
+          src: '/logo/mysql-min.png',
           text: 'MySql'
         },
         {
-          id: 6,
-          src: '/tailwind.png',
+          src: '/logo/github-min.png',
           text: 'Tailwind'
         },
-        {
-          id: 7,
-          src: '/git.jpg',
-          text: 'Git'
-        },
-        {
-          id: 8,
-          src: '/framer.png',
-          text: 'Framer Motion'
-        },
-        {
-          id: 9,
-          src: '/github.png',
-          text: 'Github'
-        },
+        // {
+        //   id: 7,
+        //   src: '/git.jpg',
+        //   text: 'Git'
+        // },
+        // {
+        //   id: 8,
+        //   src: '/framer.png',
+        //   text: 'Framer Motion'
+        // },
+        // {
+        //   id: 9,
+        //   src: '/github.png',
+        //   text: 'Github'
+        // },
       ];
     
   return (
@@ -83,7 +83,7 @@ const hoverVariant = {
           className=""
           whileHover={{scale: 0.9}}
           >
-            <Image src={item.src} alt={item.text} width={120} height={80} className="w-auto h-auto" style={{width: 'auto', height: 'auto'}} />
+            <Image priority src={item.src} alt={item.text} width={120} height={80} className="w-auto h-auto" style={{width: 'auto', height: 'auto'}} />
           </motion.figure>
           
         </motion.div>
